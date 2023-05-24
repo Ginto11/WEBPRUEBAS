@@ -1,0 +1,146 @@
+/*VARIABLES GENERALES*/
+:root{
+    --color-texto: #34495E;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Arial";
+    user-select: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+body::-webkit-scrollbar{
+    width: 7px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #34495E;
+    border-radius: 3px;
+}
+
+
+h2, p{
+    color: var(--color-texto);
+}
+
+/*PAGINA INDEX*/
+.header-index{
+    width: 100%;
+    display: flex;
+    background-color: #eeeeee;
+    height: 80px;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid #0001;
+    color: var(--color-texto);
+}
+
+.header-index .links a{
+    width: 150px;
+    height: 20px;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 10px;
+    color: var(--color-texto);
+    transition: .4s ease all;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header-index .links{
+    display: flex;
+    gap: 30px;
+}
+
+.header-index .links a:hover{
+    font-weight: bold;
+    background-color: #34495E;
+    color: #FFF;
+}
+
+.section-index {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: calc(100vh -80px);
+}
+
+.section-index .info iframe{
+    width: 99%;
+    height: calc(100vh - 117px);
+}
+
+.section-index .info{
+    width: calc(100% - 25%);
+    margin-left: 30px;
+}
+
+.section-index .pruebas {
+    width: 25%;
+    display: flex;
+    height: 50vh;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    background-color: #eeeeee;
+    padding: 15px;
+    border-radius: 10px;
+    margin-right: 30px;
+    border: 2px solid #0001;
+}
+
+.section-index .pruebas h2{
+    width: 100%;
+    background-color: #34495E;
+    color: #FFF;
+    line-height: 2;
+}
+
+.section-index .pruebas div{
+    width: 100%;
+    overflow-y: scroll;
+    display: flex;
+    height: 40vh;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.section-index .pruebas div a {
+    color: var(--color-texto);
+    text-decoration: none;
+    display: block;
+    width: 99%;
+    line-height: 2;
+    border-radius: 5px;
+    transition: .4s ease all;
+}
+
+.section-index .pruebas a:hover{
+    background-color: #34495E;
+    color: #FFF;
+}
+
+footer {
+    width: 100%;
+    background-color: #eeeeee;
+    height: 400px;
+    border-top: 2px solid #0001;
+}
+
+/*PAGINA HOME*/
+.section-home {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
