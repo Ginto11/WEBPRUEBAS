@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300&display=swap" rel="stylesheet">
+    <title>Flex</title>
+</head>
+<body>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Roboto;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .contenedor{
+            width: 90%;
+            padding: 30px;
+            min-height: 90vh;
+            background-color: red;
+            box-shadow: 0 0 10px #000 inset;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .medidas {
+            height: 200px;
+            width: 200px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #000 inset;
+        }
+
+        #item1{
+            background-color: aqua;
+        }
+
+        #item2{
+            background-color: blueviolet;
+        }
+
+        #item3{
+            background-color: brown;
+        }
+
+        #item4{
+            background-color: chartreuse;
+        }
+
+        #item5{
+            background-color: cornflowerblue;
+        }
+    </style>
+
+    <h1>TRABAJANDO CON FLEXBOX</h1>
+    <div class="contenedor">
+        <div id="item1" class="medidas"></div>
+        <div id="item2" class="medidas"></div>
+        <div id="item3" class="medidas"></div>
+        <div id="item4" class="medidas"></div>
+        <div id="item5" class="medidas"></div>
+    </div>
+</body>
+</html>

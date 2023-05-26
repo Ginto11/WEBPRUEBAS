@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300&display=swap" rel="stylesheet">
+    <title>POSITION</title>
+</head>
+<body>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Roboto;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .contenedor{
+            width: 50%;
+            min-height: 60vh;
+            background-color: red;
+            box-shadow: 0 0 10px #000 inset;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .medidas {
+            height: 100px;
+            width: 100px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #000 inset;
+            position: absolute;
+        }
+
+        #item1{
+            background-color: aqua;
+            top: 38%;
+            bottom: 38%;
+            left: 0;
+        }
+
+        #item2{
+            background-color: blueviolet;
+            top: 38%;
+            bottom: 38%;
+            right: 0;
+        }
+
+        #item3{
+            left: 40%;
+            right: 40%;
+            top: 0;
+            background-color: brown;
+        }
+
+        #item4{
+            right: 40%;
+            left: 40%;
+            bottom: 0;
+            background-color: chartreuse;
+        }
+    </style>
+
+    <h1>POSITION</h1>
+    <div class="contenedor">
+        <div id="item1" class="medidas"></div>
+        <div id="item2" class="medidas"></div>
+        <div id="item3" class="medidas"></div>
+        <div id="item4" class="medidas"></div>
+    </div>
+</body>
+</html>
